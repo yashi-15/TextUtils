@@ -3,9 +3,9 @@ import React from "react";
 export default function About() {
   return (
     <div>
-      <p class="d-inline-flex gap-1">
+      <p className="d-inline-flex gap-1">
         <a
-          class="btn btn-primary"
+          className="btn btn-primary"
           data-bs-toggle="collapse"
           href="#multiCollapseExample1"
           role="button" 
@@ -15,7 +15,7 @@ export default function About() {
           Toggle first element
         </a>
         <button
-          class="btn btn-primary"
+          className="btn btn-primary"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#multiCollapseExample2"
@@ -25,7 +25,7 @@ export default function About() {
           Toggle second element
         </button>
         <button
-          class="btn btn-primary"
+          className="btn btn-primary"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target=".multi-collapse"
@@ -35,19 +35,19 @@ export default function About() {
           Toggle both elements
         </button>
       </p>
-      <div class="row">
-        <div class="col">
-          <div class="collapse multi-collapse" id="multiCollapseExample1">
-            <div class="card card-body">
+      <div className="row">
+        <div className="col">
+          <div className="collapse multi-collapse" id="multiCollapseExample1">
+            <div className="card card-body">
               Some placeholder content for the first collapse component of this
               multi-collapse example. This panel is hidden by default but
               revealed when the user activates the relevant trigger.
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="collapse multi-collapse" id="multiCollapseExample2">
-            <div class="card card-body">
+        <div className="col">
+          <div className="collapse multi-collapse" id="multiCollapseExample2">
+            <div className="card card-body">
               Some placeholder content for the second collapse component of this
               multi-collapse example. This panel is hidden by default but
               revealed when the user activates the relevant trigger.
