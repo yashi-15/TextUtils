@@ -1,14 +1,17 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 export default function Navbar(props) {
   return (
     <div>
       <nav className={`navbar navbar-expand-lg bg-${props.mode}`}>
       <div className="container-fluid">
-        <Link className={`navbar-brand text-${props.mode === "dark" ? "light":"dark"}`} to="/">
+        <a className={`navbar-brand text-${props.mode === "dark" ? "light":"dark"}`} href="/">
           Text-Utils
-        </Link>
+        </a>
+        {/* <Link className={`navbar-brand text-${props.mode === "dark" ? "light":"dark"}`} to="/">
+          Text-Utils
+        </Link> */}
         <button
           className="navbar-toggler"
           type="button"
@@ -23,15 +26,18 @@ export default function Navbar(props) {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link className={`nav-link active text-${props.mode === "dark" ? "light":"dark"}`} aria-current="page" to="/">
+              <a className={`nav-link active text-${props.mode === "dark" ? "light":"dark"}`} aria-current="page" href="/">
                 Home
-              </Link>
+              </a>
+              {/* <Link className={`nav-link active text-${props.mode === "dark" ? "light":"dark"}`} aria-current="page" to="/">
+                Home
+              </Link> */}
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link className={`nav-link active text-${props.mode === "dark" ? "light":"dark"}`} to="/about">
                 About
               </Link>
-            </li>
+            </li> */}
           </ul>
           <form className="d-flex" role="search">
             <input
