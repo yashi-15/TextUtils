@@ -124,7 +124,7 @@ export default function Textform(props) {
         <h3>Your Text Summary Here</h3>
         <p>
           {" "}
-          {Text.split(" ").filter((element)=>{return element.length!==0}).length} words and {Text.length} letters
+          {Text.split(" ").filter((element)=>{return element.length!==0}).length} words and {Text.replace(/ /g, "").length} letters
         </p>
         <p>Average read time: {0.005 * Text.split(" ").filter((element)=>{return element.length!==0}).length} minutes.</p>
         <h4>Preview</h4>
