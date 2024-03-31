@@ -46,6 +46,7 @@ export default function Textform(props) {
     var text = document.getElementById("exampleFormControlTextarea1")
     text.select();
     navigator.clipboard.writeText(text.value);
+    document.getSelection().removeAllRanges();
     props.showalert("Text Copied !", "success")
 
   };
