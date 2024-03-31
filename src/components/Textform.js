@@ -43,10 +43,7 @@ export default function Textform(props) {
     setText(word);
   };
   const handleCopyTxt = () => {
-    var text = document.getElementById("exampleFormControlTextarea1")
-    text.select();
-    navigator.clipboard.writeText(text.value);
-    document.getSelection().removeAllRanges();
+    navigator.clipboard.writeText(Text);
     props.showalert("Text Copied !", "success")
 
   };
@@ -124,9 +121,9 @@ export default function Textform(props) {
         <h3>Your Text Summary Here</h3>
         <p>
           {" "}
-          {Text.split(" ").filter((element)=>{return element.length!==0}).length} words and {Text.replace(/ /g, "").length} letters
+          {Text.split(/\s+/).filter((element)=>{return element.length!==0}).length} words and {Text.replace(/ /g, "").length} letters
         </p>
-        <p>Average read time: {0.005 * Text.split(" ").filter((element)=>{return element.length!==0}).length} minutes.</p>
+        <p>Average read time: {0.005 * Text.split(/\s+/).filter((element)=>{return element.length!==0}).length} minutes.</p>
         <h4>Preview</h4>
         <p className={`${props.mode === "dark" ? "text-bg-primary":"bg-primary-subtle"} p-3`}> {Text}</p>
       </div>
