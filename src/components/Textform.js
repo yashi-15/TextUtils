@@ -120,7 +120,7 @@ export default function Textform(props) {
           Clear Text
         </button>
       </div>
-      <div className="container my-5">
+      <div className="container mt-5">
         <h3>Your Text Summary Here</h3>
         <p>
           {" "}
