@@ -56,7 +56,7 @@ export default function Textform(props) {
   };
   return (
     <>
-      <div className="container my-5">
+      <div className="container">
         <h3>{props.heading}</h3>
         <textarea
           className={`form-control ${props.mode === "dark" ? "text-bg-secondary":"text-bg-light"}`}
